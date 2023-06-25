@@ -1,0 +1,15 @@
+* {
+    text-align: center;
+}
+
+header {
+    background-color: yellow;
+}
+
+li {
+    list-style: none;
+}
+
+.punto {
+    list-style: disc;
+}
