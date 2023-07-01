@@ -1,15 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --tipografia : 'Roboto', sans-serif;
+}
+
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 12px; */
+    font-family: var(--tipografia);
+}
+
+/* HEADER */
+header {
+    background-color: #EAC926;;
+}
+
+.logo {
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 140px;
+}
+
+header form {
+    padding-left: 10px;
+}
+
+.lupa {
+    margin-left: 10px;
+}
+
+header nav ul {
+     padding-top: 20px;
+}
+
+header nav ul i {
+    padding-left: 4px;
+}
+
+header p {
     text-align: center;
 }
 
-header {
-    background-color: yellow;
+.burger-menu {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.burger-menu i {
+    border-radius: 20%;
+    background-color:  rgba(0, 0, 255, 0.76);
+    color: white;
+    font-size: 40px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+section {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+}
+
+.descripcion {
+    font-size: 16px;
 }
 
 li {
     list-style: none;
 }
 
-.punto {
-    list-style: disc;
+.h4 {
+    font-size: 12px;
+}
+
+/* FOOTER */
+footer section article i {
+    width: 2em;
+    margin-bottom: 10px;
+    color: #1d54b4;
+    padding-top: 20px;
+}
+
+footer section article p {
+    color: #666;
+}
+
+h6 {
+    font-size: 13px;
+    padding-left: 15px;
+    padding-top: 20px;
+    color: rgba(128, 128, 128, 0.63);
 }
