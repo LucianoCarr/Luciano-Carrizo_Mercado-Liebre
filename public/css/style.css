@@ -12,9 +12,14 @@
     font-family: var(--tipografia);
 }
 
+li {
+    list-style: none;
+}
+
+
 /* HEADER */
 header {
-    background-color: #EAC926;;
+    background-color: #EAC926;
 }
 
 .logo {
@@ -27,12 +32,9 @@ header form {
     padding-left: 10px;
 }
 
-.lupa {
-    margin-left: 10px;
-}
-
 header nav ul {
-     padding-top: 20px;
+    padding-top: 20px;
+    display: none;
 }
 
 header nav ul i {
@@ -40,6 +42,7 @@ header nav ul i {
 }
 
 header p {
+    margin: 10px;
     text-align: center;
 }
 
@@ -57,12 +60,59 @@ header p {
     margin-bottom: 20px;
 }
 
-section {
-    text-align: center;
+
+/* MAIN */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+main section {
+    width: 90%;
+    margin: 10px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+main article img {
+    width: 100%;
+}
+
+.producto-caja {
+    border: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: lightgray;
+    text-align: center;
+    margin: 8px;
+}
+
+main section article ul{
+    padding: 15px;
+    border-top: solid 0,1px lightgray;
+    background-color: white;
+}
+
+main section article ul li {
+    text-align: left;
+}
+
+main section article h2 {
+    text-align: left;
+}
+
+.camion {
+    border: solid 1px #1bde1f;
+    border-radius: 50%;
+    padding: 1px 10px 10px 1px;
+}
+
+.fa-truck:before {
+    font-size: 12px;
 }
 
 .precio {
@@ -70,22 +120,20 @@ h2 {
 }
 
 .descuento {
+    color: #1bde1f;
     font-size: 16px;
 }
 
 .descripcion {
     font-size: 16px;
-}
-
-li {
-    list-style: none;
-}
-
-.h4 {
-    font-size: 12px;
+    margin-top: 10px;
 }
 
 /* FOOTER */
+footer section article {
+    text-align: center;
+}
+
 footer section article i {
     width: 2em;
     margin-bottom: 10px;
@@ -97,9 +145,51 @@ footer section article p {
     color: #666;
 }
 
+.h4 {
+    font-size: 12px;
+}
+
+
 h6 {
     font-size: 13px;
     padding-left: 15px;
     padding-top: 20px;
     color: rgba(128, 128, 128, 0.63);
+}
+
+
+@media (min-width: 361px) {
+    /* main */
+    main section {
+        width: 70%;
+    }
+
+    .logo{
+        width: 160px;
+    }
+
+    header nav {
+        margin-left: 10px;
+    }
+
+    header nav ul {
+        display: contents;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .producto-caja {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    /* main */
+    main section {
+        width: 50%;
+    }
+
 }
