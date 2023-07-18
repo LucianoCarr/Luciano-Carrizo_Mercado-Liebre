@@ -1,195 +1,254 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-    --tipografia : 'Roboto', sans-serif;
+  --tipografia: "Roboto", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-size: 12px; */
-    font-family: var(--tipografia);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 12px; */
+  font-family: var(--tipografia);
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
-
 
 /* HEADER */
 header {
-    background-color: #EAC926;
+  background-color: #eac926;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .logo {
-    margin-top: 10px;
-    padding-left: 20px;
-    width: 140px;
+  margin-top: 10px;
+  width: 40%;
 }
 
 header form {
-    padding-left: 10px;
+  padding-left: 4px;
+  display: flex;
+  align-self: center;
 }
 
 header nav ul {
-    padding-top: 20px;
-    display: none;
+  padding-top: 20px;
+  display: none;
 }
 
 header nav ul i {
-    padding-left: 4px;
+  padding-left: 4px;
 }
 
 header p {
-    margin: 10px;
-    text-align: center;
+  margin: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .burger-menu {
-    padding-top: 35px;
-    text-align: center;
+  text-align: center;
 }
 
 .burger-menu i {
-    border-radius: 20%;
-    background-color:  rgba(0, 0, 255, 0.76);
-    color: white;
-    font-size: 40px;
-    padding: 12px;
-    margin-bottom: 20px;
+  border-radius: 20%;
+  background-color: rgba(0, 0, 255, 0.76);
+  color: white;
+  font-size: 40px;
+  padding: 12px;
+  margin-bottom: 20px;
 }
 
+.banner {
+  display: none;
+}
 
 /* MAIN */
+h2 {
+    font-size: 19px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
 main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
 }
 
 main section {
-    width: 90%;
-    margin: 10px;
-}
-
-h2 {
-    font-size: 19px;
-    margin-bottom: 10px;
+  width: 90%;
+  margin: 10px;
 }
 
 main article img {
-    width: 100%;
+  width: 100%;
 }
 
 .producto-caja {
-    border: solid 1px #ebebeb;
-    padding: 15px;
-    background-color: lightgray;
-    text-align: center;
-    margin: 8px;
+  border: solid 10px #ebebeb;
+  text-align: center;
+  margin: 8px;
 }
 
-main section article ul{
-    padding: 15px;
-    border-top: solid 0,1px lightgray;
-    background-color: white;
+main section article ul {
+  padding: 15px;
+  border-top: solid 1px lightgray;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 main section article ul li {
-    text-align: left;
+  text-align: left;
 }
 
 main section article h2 {
-    text-align: left;
+  text-align: left;
+}
+
+.truck {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -30px;
 }
 
 .camion {
-    border: solid 1px #1bde1f;
-    border-radius: 50%;
-    padding: 1px 10px 10px 1px;
+  border: solid 1px #1bde1f;
+  border-radius: 50%;
+  padding: 4px;
 }
 
 .fa-truck:before {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .precio {
-    font-size: 18px;
+  font-size: 18px;
+  padding: 0 20px 0 0;
 }
 
 .descuento {
-    color: #1bde1f;
-    font-size: 16px;
+  color: #1bde1f;
+  font-size: 16px;
 }
 
 .descripcion {
-    font-size: 16px;
-    margin-top: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
 }
 
 /* FOOTER */
 footer section article {
-    text-align: center;
+  text-align: center;
 }
 
 footer section article i {
-    width: 2em;
-    margin-bottom: 10px;
-    color: #1d54b4;
-    padding-top: 20px;
+  width: 2em;
+  margin-bottom: 10px;
+  color: #1d54b4;
+  padding-top: 20px;
+  font-size: 32px;
 }
 
 footer section article p {
-    color: #666;
+  color: #666;
 }
 
 .h4 {
-    font-size: 12px;
+  font-size: 12px;
 }
-
 
 h6 {
-    font-size: 13px;
-    padding-left: 15px;
-    padding-top: 20px;
-    color: rgba(128, 128, 128, 0.63);
+  font-size: 13px;
+  padding-left: 15px;
+  padding-top: 20px;
+  color: rgba(128, 128, 128, 0.63);
 }
 
+/* TABLET */
+@media (min-width: 768px) {
+  /* HEADER */
+  .logo {
+    width: 30%;
+    margin: auto;
+  }
+  header form {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  header p {
+    margin: auto;
+    width: 30%;
+    font-size: 15px;
+  }
 
-@media (min-width: 361px) {
-    /* main */
-    main section {
-        width: 70%;
-    }
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 
-    .logo{
-        width: 160px;
-    }
+  header nav ul {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
-    header nav {
-        margin-left: 10px;
-    }
+  .registro {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    header nav ul {
-        display: contents;
-    }
+  header nav ul li {
+    padding: 0 6px 0 6px;
+  }
 
-    .burger-menu {
-        display: none;
-    }
+  .burger-menu {
+    display: none;
+  }
 
-    .producto-caja {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        margin: 20px;
-    }
+  .banner {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  /* MAIN */
+  main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .producto-caja {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
 }
 
-@media (min-width: 769px) {
-    /* main */
-    main section {
-        width: 50%;
-    }
+/* DESKTOP */
+@media (min-width: 1024px) {
+  /* MAIN */
+  main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+  }
 
+  .producto-caja {
+    align-self: baseline;
+  }
 }
