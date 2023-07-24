@@ -1,0 +1,16 @@
+
+:root {
+  --tipografia: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 12px; */
+  font-family: var(--tipografia);
+}
+
+li {
+  list-style: none;
+}
