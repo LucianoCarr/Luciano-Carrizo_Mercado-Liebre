@@ -12,45 +12,81 @@
 <body>
     <main>
         <div class="card-login">
-            <form action="" class="formulario">
+            <form action="./home.html" class="formulario">
                 <div class="casillas-registro">
                     <label for="text"></label>
-                    <input class="formulario-casillas id=" name" name="name" type="text"
-                        placeholder="Nombre y apellido">
+                    <input class="formulario-casillas id="name" name="name" type="text" placeholder="Nombre y apellido">
                 </div>
                 <div class="casillas-registro">
                     <label for="text"></label>
-                    <input class="formulario-casillas id=" text" name="text" type="text"
-                        placeholder="Nombre de usuario">
+                    <input class="formulario-casillas id="text" name="text" type="text" placeholder="Nombre de usuario">
                 </div>
                 <div class="casillas-registro">
                     <label for="email"></label>
-                    <input class="formulario-casillas id=" email" type="email" name="email" placeholder="Email">
+                    <input class="formulario-casillas id="email" type="email" name="email" placeholder="Email">
                 </div>
                 <div class="casillas-registro">
-                    <label for="text">Fecha de Nacimiento</label>
-                    <input class="formulario-casillas id=" text" name="text" type="text" placeholder="Domicilio">
+                    <h2>Fecha de Nacimiento</h2>
+                    <label for="date"></label>
+                    <input class="formulario-casillas id="date" name="date" type="date">
                 </div>
                 <div class="casillas-registro">
+                    <label for="text"></label>
+                    <input class="formulario-casillas id="text" name="text" type="text" placeholder="Domicilio">
+                </div>
+                <div class="radio-registro">
                     <h2>Perfil de usuario</h2>
-                    <label>Comprador</label>
-                    <input type="radio" name="perfil" value="com">
-                    <label>Vendedor</label>
-                    <input type="radio" name="perfil" value="ven">
+                    <div class="radio-caja">
+                        <div class="formulario-radio">
+                            <input type="radio" name="perfil" value="com">
+                            <label>Comprador</label>
+                        </div>
+                        <div class="formulario-radio">
+                            <input type="radio" name="perfil" value="ven">
+                            <label>Vendedor</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="casillas-registro">
+                <div class="checkbox-registro">
                     <h2>Intereses</h2>
-                    <label>Electro</label>
-                    <input type="checkbox" name="categorias" value="E">
-                    <label>Moda</label>
-                    <input type="checkbox" name="categorias" value="M">
-                    <label>Hogar</label>
-                    <input type="checkbox" name="categorias" value="H">
-                    <label>Jugueteria</label>
-                    <input type="checkbox" name="categorias" value="J">
-                    <label>Vida sana</label>
-                    <input type="checkbox" name="categorias" value="V">
-                    
+                    <div class="formulario-checkbox">
+                        <input type="checkbox" name="categorias" value="E">
+                        <label>Electro</label>
+                    </div>
+                    <div class="formulario-checkbox">
+                        <input type="checkbox" name="categorias" value="M">
+                        <label>Moda</label>
+                    </div>
+                    <div class="formulario-checkbox">
+                        <input type="checkbox" name="categorias" value="H">
+                        <label>Hogar</label>
+                    </div>
+                    <div class="formulario-checkbox">
+                        <input type="checkbox" name="categorias" value="J">
+                        <label>Jugueteria</label>
+                    </div>
+                    <div class="formulario-checkbox">
+                        <input type="checkbox" name="categorias" value="V">
+                        <label>Vida sana</label>
+                    </div>
+                    <div class="casillas-registro">
+                        <label for="file"></label>
+                        <input class="formulario-casillas id="file" type="file" name="file">
+                    </div>
+                    <div class="casillas-registro">
+                        <label for="password"></label>
+                        <input class="formulario-casillas id="password" type="password" name="password" placeholder="Elegi tu Contraseña">
+                    </div>
+                    <div class="casillas-registro">
+                        <label for="password2"></label>
+                        <input class="formulario-casillas id="password2" type="password" name="password2" placeholder="Confirma tu Contraseña">
+                    </div>
+                    <div class="formulario-boton">
+                        <button class="boton" type="submit">Enviar</button>
+                    </div>
+                    <div class="formulario-boton">
+                        <button class="boton-2" type="reset">Borrar</button>
+                    </div>
             </form>
         </div>
     </main>
