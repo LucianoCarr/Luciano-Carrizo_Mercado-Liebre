@@ -1,0 +1,23 @@
+/* perfil de usuario */
+.radio-registro {
+    width: 100%;
+}
+
+.radio-caja {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Intereses */
+.formulario-checkbox {
+    margin: 20px;
+}
+
+/* Botones */
+.boton-2 {
+    width: 95%;
+        background-color: red;
+        color: white;
+        padding: 8px;
+        margin-bottom: 20px;
+}
